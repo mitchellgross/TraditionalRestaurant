@@ -1,0 +1,89 @@
+body{
+    background-image: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#header{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 4vh;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+#navBar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: auto;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    background-color: yellow;
+}
+
+#navBar>a , #navBar>.dropdown{
+    width: 20%;
+}
+
+#navBar a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+}
+
+#navBar a:hover{
+    background-color: rgba(0, 0, 0, 0.13);
+}
+
+.dropdown{
+    overflow: hidden;
+}
+
+.dropList{
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: 1;
+}
+
+.dropList>a:hover{
+    background-color: rgba(0, 0, 0, 0.13);
+}
+
+.dropdown:hover .dropList{
+    display: block;
+    background-color: yellow;
+}
+
+#content{
+    margin: auto;
+    margin-top: 1%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    /* Prevents padding from increasing the overall size of this div */
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+#footer{
+    margin: auto;
+    margin-top: 1%;
+    width: 80%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    /* Prevents padding from increasing the overall size of this div */
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+#footer td{
+    width:33.33%;
+}

@@ -1,0 +1,28 @@
+@import url('universal.css');
+.staffStrip{
+    position: relative;
+    margin: auto;
+    width: 95%;
+    display: flex;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid red;
+}
+
+.staffStrip:last-of-type{
+    border-bottom: none;
+}
+
+.staffStrip>div{
+    align-self: center;
+    position: relative;
+    width: calc(100% - 150px);
+}
+
+.staffStrip>#staffPic{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}

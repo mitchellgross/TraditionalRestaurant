@@ -1,0 +1,195 @@
+@media screen and (min-width: 800px) { /* if the viewport is at least 800px */
+  #header{
+      margin: auto;
+      width: 80%;
+      text-align: center;
+      font-size: 35px;
+      background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  #header>#subTitle{
+      font-size: 20px;
+      font-style: italic;
+  }
+
+  #navBar{
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      max-height: 28px;
+  }
+
+  #navBar>a , #navBar>.dropdown{
+      margin: auto;
+      width: 20%;
+  }
+
+  #navBar a , .dropList input{
+      display: block;
+      text-decoration: none;
+      font-weight: normal;
+      font-family: "Times New Roman", Times, serif;
+      border:none;
+      background: none;
+      color: black;
+      font-size: 22px;
+  }
+
+  #navBar>a:hover{
+      background-color: rgba(0, 0, 0, 0.13);
+  }
+
+  .dropList{
+      display: none;
+      position: relative;
+      width: 20%;
+      left: 20%;
+      font-size: 22px;
+      background-color: rgba(255, 255, 255, 0.9);
+      z-index: 1;
+  }
+
+  .dropList>input{
+      margin: auto;
+      width: 100%;
+      height: 30px;
+  }
+
+  .dropList>input:hover{
+      background-color: rgba(0, 0, 0, 0.13);
+      cursor: pointer;
+  }
+
+  #content{
+      margin: auto;
+      margin-top: 1%;
+      width: 80%;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.7);
+      /* Prevents padding from increasing the overall size of this div */
+      -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+      -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+      box-sizing: border-box;         /* Opera/IE 8+ */
+  }
+
+  #footer{
+      margin: auto;
+      margin-top: 1%;
+      width: 80%;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 799px) { /* if the viewport is between 0px and 799px */
+  /* Give the Menu button a little arrow on the right side to drop down the menu */
+  #header{
+      margin: auto;
+      width: 100%;
+      text-align: center;
+      font-size: 35px;
+      background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  #header>#subTitle{
+      font-size: 20px;
+      font-style: italic;
+  }
+
+  #navBar{
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+  }
+
+  #navBar>a , #navBar>.dropdown{
+      margin: auto;
+      width: 100%;
+  }
+
+  #navBar a , .dropList input{
+      display: block;
+      text-decoration: none;
+      font-weight: normal;
+      font-family: "Times New Roman", Times, serif;
+      border:none;
+      background: none;
+      color: black;
+      font-size: 22px;
+  }
+
+  #navBar>a:hover{
+      background-color: rgba(0, 0, 0, 0.13);
+  }
+
+  .dropList{
+      display: none;
+      position: absolute;
+      width: 0px;
+      left: 0px;
+      opacity: 0;
+  }
+
+  .dropList>input{
+      margin: auto;
+      width: 100%;
+      height: 30px;
+  }
+
+  .dropList>input:hover{
+      background-color: rgba(0, 0, 0, 0.13);
+      cursor: pointer;
+  }
+
+  #content{
+      margin: auto;
+      margin-top: 1%;
+      width: 100%;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.7);
+      /* Prevents padding from increasing the overall size of this div */
+      -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+      -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+      box-sizing: border-box;         /* Opera/IE 8+ */
+  }
+
+  #footer{
+      margin: auto;
+      margin-top: 1%;
+      width: 100%;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.7);
+  }
+}
+html{
+    background: url('images/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-y: scroll;
+}
+
+a{
+    color: rgb(216, 0, 0);
+}
+
+h1{
+    font-size: 28px;
+    font-weight: normal;
+    margin: 0px;
+}
+
+#footer td{
+    width:33.33%;
+}
+
+#footer ul{
+    list-style-position: inside;
+    margin: 0px;
+    padding: 0px;
+}

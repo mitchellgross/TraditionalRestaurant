@@ -1,0 +1,47 @@
+@import url('universal.css');
+#menuSearch{
+    float: center;
+    width: 300px;
+    font-size: 18px;
+}
+
+#menuTitle{
+    float: center;
+    font-size: 24px;
+}
+
+#menuContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.menuItem{
+    background-color: rgba(231, 231, 231, 0.88);
+    border-top: red solid 2px;
+    width: 200px;
+    margin: 2%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.menuItem>#itemTitle{
+    font-weight: bold;
+}
+
+.menuItem>img{
+    width: 80%;
+    height: auto;
+}
+
+.menuItem>#itemPrice{
+    font-family: arial;
+}
+
+.menuItem>#itemDesc{
+    margin: auto;
+    width: 90%;
+    border-top: red solid 1px;
+}

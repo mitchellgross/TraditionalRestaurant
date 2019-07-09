@@ -1,0 +1,54 @@
+#header{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    font-size: 4vh;
+}
+
+#navBar{
+    margin: auto;
+    width: 100%;
+    font-size: 3vh;
+}
+
+#navBar td{
+    width: 20%;
+}
+
+#navBar a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+#navBar td:hover{
+    background-color: rgba(0, 0, 0, 0.24);
+}
+
+#navBar a:hover{
+    color: red;
+}
+
+#content{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    background-color: rgb(211, 211, 211);    
+    /* Prevents padding from increasing the overall size of this div */
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+#footer{
+    margin: auto;
+    margin-top: 1%;
+    padding: 1%;
+    width: 80%;
+    text-align: center;
+    background-color: red;
+    /* Prevents padding from increasing the overall size of this div */
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
